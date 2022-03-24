@@ -1,0 +1,92 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: times new roman, arial, sans-serif;
+  line-height: 1.5;
+  background-color: burlywood;
+  color: black;
+}
+
+h1 {
+  font-family: times new roman, arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+#button1:active, #button1.lit {
+  background: url(https://cdn.glitch.global/eb202599-9b09-4cc9-81da-23ec756d5b8d/oscar.jpg?v=1648014198841);
+}
+
+#button2 {
+  background: lightblue;
+}
+#button2:active, #button2.lit {
+  background: url(https://cdn.glitch.global/eb202599-9b09-4cc9-81da-23ec756d5b8d/download.jpg?v=1648013970107);
+}
+
+#button3 {
+  background: pink;
+}
+#button3:active, #button3.lit {
+  background: url(https://cdn.glitch.global/eb202599-9b09-4cc9-81da-23ec756d5b8d/elmo.jpg?v=1648012246759);
+}
+
+#button4 {
+  background: lightyellow;
+}
+#button4:active, #button4.lit {
+  background: url(https://cdn.glitch.global/eb202599-9b09-4cc9-81da-23ec756d5b8d/bigBird.jpg?v=1648014582885);  
+}
+
+#button5 {
+  background: moccasin;
+}
+#button5:active, #button5.lit {
+  background: url(https://cdn.glitch.global/eb202599-9b09-4cc9-81da-23ec756d5b8d/ernie.jpg?v=1648014283724);
+}
+
+#button6 {
+  background: lavender;
+}
+#button6:active, #button6.lit {
+  background: url(https://cdn.glitch.global/eb202599-9b09-4cc9-81da-23ec756d5b8d/count.jpg?v=1648014353558);
+}
+
+/* images and videos max out at full width */
+img {
+  height: 200px;
+  width: 200px;
+}
+
+video {
+  height: auto;
+  max-width: 100%;
+}
